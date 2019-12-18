@@ -7,6 +7,6 @@ var burger = sequelize.define("burgers",{
 });
 
 
-book.sync();
+burger.sync();
 
 module.exports = burger;
