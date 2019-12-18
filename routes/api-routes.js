@@ -8,7 +8,12 @@ module.exports = function (app){
     });
 
     app.post("/api/new", function(req, res){
-        
+        burger.create({
+            burger_name: req.params.burger_name,
+            devoured: false
+        }).then(function (results){
+            res.json(results);
+        })
     });
 
     app.delete("/api/burger/:id", function(req, res){
