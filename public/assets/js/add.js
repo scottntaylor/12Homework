@@ -15,7 +15,9 @@ $("#order-button").on("click", function(event) {
         // Log the data we found
         var burgerButton = $("<div>");
         burgerButton.addClass("burger");
-        burgerButton.append("<p>" + burger_name + "<p>")
+        burgerButton.addClass("delete");
+        burgerButton.append("<p>" + burger_name + "<p>");
+        
 
         console.log(data);
 
