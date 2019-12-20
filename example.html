@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/public/assets/css/burger_style.css" type="text/css" />
+    <title>Burgertopia</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/models/burger.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Welcome to Burgertopia!</h1>
+            <p class="lead">What burger would you like to order?</p>
+            <textarea id="burgerName" class="materialize-textarea"></textarea>
+            <label for="textarea1"></label><button type="button" class="btn btn-dark"><a
+                    class="waves-effect waves-light btn" id="order-button">Order</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-6">
+            <div>
+                <H1>
+                    Burgers To Eat!
+                </H1>
+            </div>
+            <div id="burgersToEat">
+
+            </div>
+
+
+        </div>
+
+        <div class="col-6">
+            <div>
+                <H1>
+                    Burgers Devoured!
+                </H1>
+            </div>
+            <div id="burgersDevoured">
+
+                </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

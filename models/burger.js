@@ -9,4 +9,4 @@ var burger = sequelize.define("burgers",{
 
 burger.sync();
 
-module.exports = burger;
+module.exports = Burger;

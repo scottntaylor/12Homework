@@ -1,4 +1,4 @@
-var Burger = require("..models/burger.js");
+var Burger = require("..models/burger");
 
 module.exports = function (app){
     app.get("/api/all", function (req, res){
