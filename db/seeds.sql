@@ -1,8 +1,10 @@
-INSERT burgers (burger_name, devoured)
-Values("Hamburger", False);
 
-INSERT burgers (burger_name, devoured)
-Values("Cheese_burger", False);
 
-INSERT burgers (burger_name, devoured)
-Values("Bacon_burger", False);
+INSERT INTO burgers (name) 
+VALUES ('Hamburger');
+INSERT INTO burgers (name) 
+VALUES ('Cheeseburger');
+INSERT INTO burgers (name) 
+VALUES ('Bacon Burger');
+INSERT INTO burgers (name)
+VALUES ('Mushroom Swiss Burger');

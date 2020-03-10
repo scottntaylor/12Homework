@@ -11,7 +11,7 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../example.html"));
+    res.sendFile(path.join(__dirname, "../public/display.html"));
   });
 
 //   // add route loads the add.html page, where users can enter new books to the db

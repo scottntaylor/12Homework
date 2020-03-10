@@ -1,12 +1,29 @@
 var Sequelize = require("sequelize");
-var sequelize = require("../config/connection");
+// sequelize (lowercase) references our connection to the DB.
+var sequelize = require("../config/connection.js");
 
-var burger = sequelize.define("burgers",{
-    burger_name: Sequelize.STRING,
-    devoured: Sequelize.BOOLEAN
+// Creates a "Chirp" model that matches up with DB
+var Burger = sequelize.define("burgers", {
+  name:
+  { 
+    type: Sequelize.STRING
+  
+  },
+  orders: {
+  type:  Sequelize.STRING,
+  defaultValue: ""
+
+  },
+devoured:{
+    type: Sequelize.BOOLEAN,
+    defaultValue: false
+}
+
 });
 
+// Syncs with DB
+Burger.sync({force: true});
+// Burger.sync();
 
-burger.sync();
-
-module.exports = burger;
+// Makes the Chirp Model available for other files (will also create a table)
+module.exports = Burger;
